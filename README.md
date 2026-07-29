@@ -30,7 +30,7 @@ Please note that ROOT VR requires a 64-bit ROOT installation. You can check whet
 
 The recommended installation method is to download and run the ROOT VR installer (linked below). Doing so will download the ROOT VR client and associated ROOT dictionary, and append the latter to your `Path` environment variable. Upon uninstallation, this will be removed from `Path`. An uninstaller will be downloaded with the linked installer. If the above link is not functioning, you may want to clone this repository and manually run the file `ROOT_VR_installer.exe`.
 
-* <a href="https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/main/ROOT_VR_installer.exe"> ROOT VR 0.10.0 Windows Win64 Installer</a>
+* <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_installer.exe"> ROOT VR 0.10.0 Windows Win64 Installer</a>
 
 ### Install Pre-Compiled Binaries for Linux
 
@@ -42,7 +42,7 @@ wget https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/R
 
 Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_10_0.tar.gz` to extract the `.tar.gz` file. If you are unable to use `wget`, you may download the `.tar.gz` file from the following link. 
 
-* <a href = "https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/ROOT_src/ROOT_VR_Ubuntu_0_10_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
+* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_Ubuntu_0_10_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
 
 Prior to use, ensure that ROOT VR is in your `PATH` environment variable by running `export PATH="$PATH:/<path-to-ROOT-VR>/ROOT_src/build_linux"`.
 
