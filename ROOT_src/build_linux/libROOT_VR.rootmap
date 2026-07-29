@@ -1,0 +1,61 @@
+{ decls }
+namespace ROOT { namespace VR {  } }
+class TH2S;
+namespace ROOT { namespace VR { template <typename T> class VRHist; } }
+class TH2C;
+class TH2L;
+class TH2D;
+class TH2I;
+class TH2F;
+class TH1S;
+class TH1C;
+class TH1L;
+class TH1D;
+class TH1I;
+class TH1F;
+namespace ROOT { namespace VR { template <typename T> class VRHist1; } }
+namespace ROOT { namespace VR { template <typename T> class VRHist2; } }
+
+[ libROOT_VR.so ]
+# List of selected classes
+class ROOT::VR::VRGraph2D
+class ROOT::VR::VRHist1<TH1C>
+class ROOT::VR::VRHist1<TH1D>
+class ROOT::VR::VRHist1<TH1F>
+class ROOT::VR::VRHist1<TH1I>
+class ROOT::VR::VRHist1<TH1L>
+class ROOT::VR::VRHist1<TH1S>
+class ROOT::VR::VRHist2<TH2C>
+class ROOT::VR::VRHist2<TH2D>
+class ROOT::VR::VRHist2<TH2F>
+class ROOT::VR::VRHist2<TH2I>
+class ROOT::VR::VRHist2<TH2L>
+class ROOT::VR::VRHist2<TH2S>
+class ROOT::VR::VRHist<TH1C>
+class ROOT::VR::VRHist<TH1D>
+class ROOT::VR::VRHist<TH1F>
+class ROOT::VR::VRHist<TH1I>
+class ROOT::VR::VRHist<TH1L>
+class ROOT::VR::VRHist<TH1S>
+class ROOT::VR::VRHist<TH2C>
+class ROOT::VR::VRHist<TH2D>
+class ROOT::VR::VRHist<TH2F>
+class ROOT::VR::VRHist<TH2I>
+class ROOT::VR::VRHist<TH2L>
+class ROOT::VR::VRHist<TH2S>
+header VRGraph2D.h
+# List of selected namespaces
+namespace ROOT::VR
+# List of selected typedefs and outer classes
+typedef ROOT::VR::VRHist1F
+typedef ROOT::VR::VRHist1I
+typedef ROOT::VR::VRHist1D
+typedef ROOT::VR::VRHist1L
+typedef ROOT::VR::VRHist1C
+typedef ROOT::VR::VRHist1S
+typedef ROOT::VR::VRHist2F
+typedef ROOT::VR::VRHist2I
+typedef ROOT::VR::VRHist2D
+typedef ROOT::VR::VRHist2L
+typedef ROOT::VR::VRHist2C
+typedef ROOT::VR::VRHist2S

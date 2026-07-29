@@ -1,0 +1,8 @@
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/G__ROOT_VR.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/VR.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/edit_cache.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/list_install_components.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/install.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/install/local.dir
+/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/install/strip.dir

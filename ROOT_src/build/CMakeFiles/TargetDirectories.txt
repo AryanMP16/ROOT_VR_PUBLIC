@@ -1,0 +1,5 @@
+C:/ROOT_VR/ROOT_src/build/CMakeFiles/G__ROOT_VR.dir
+C:/ROOT_VR/ROOT_src/build/CMakeFiles/VR.dir
+C:/ROOT_VR/ROOT_src/build/CMakeFiles/INSTALL.dir
+C:/ROOT_VR/ROOT_src/build/CMakeFiles/ALL_BUILD.dir
+C:/ROOT_VR/ROOT_src/build/CMakeFiles/ZERO_CHECK.dir

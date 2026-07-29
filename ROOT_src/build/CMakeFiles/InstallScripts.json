@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/ROOT_VR/ROOT_src/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

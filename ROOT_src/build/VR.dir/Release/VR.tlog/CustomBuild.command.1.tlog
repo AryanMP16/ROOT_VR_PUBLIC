@@ -1,0 +1,20 @@
+^C:\ROOT_VR\ROOT_SRC\BUILD\CMAKEFILES\B0BBA648391F13169BDB24485BCD619F\G__ROOT_VR.CXX.RULE
+setlocal
+C:\root_v6.40.02\bin\rootcling.exe -v2 -f G__ROOT_VR.cxx -s C:/ROOT_VR/ROOT_src/build/libROOT_VR.dll -rml libROOT_VR.dll -rmf C:/ROOT_VR/ROOT_src/build/libROOT_VR.rootmap -D_XKEYCHECK_H -DNOMINMAX -D_CRT_SECURE_NO_WARNINGS -D_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING -D_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING -IC:/root_v6.40.02/include -IC:/ROOT_VR/ROOT_src -IC:/ROOT_VR/ROOT_src/inc C:/ROOT_VR/ROOT_src/inc/VR.h C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h C:/ROOT_VR/ROOT_src/inc/VRHist.h C:/ROOT_VR/ROOT_src/inc/LinkDef.h -DR__DUMMY_CXX_STANDARD_17
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ROOT_VR\ROOT_SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ROOT_VR/ROOT_src -BC:/ROOT_VR/ROOT_src/build --check-stamp-file C:/ROOT_VR/ROOT_src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

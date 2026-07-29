@@ -1,0 +1,10 @@
+^C:\ROOT_VR\ROOT_SRC\BUILD\CMAKEFILES\4AE87943A00EC9A8CB4B5C35D58AACE8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ROOT_VR/ROOT_src -BC:/ROOT_VR/ROOT_src/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/ROOT_VR/ROOT_src/build/ROOT_VR.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
