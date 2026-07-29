@@ -24,6 +24,8 @@ ROOT VR is currently supported on Windows (64-bit) and Linux (Ubuntu).
 
 ## Installation
 
+This repository includes the necessary ROOT dictionary implementing ROOT VR objects, but not the VR visualization software itself; that can be found on the Meta AppLab. Please see <a href="https://vr.physics.ucla.edu/rootvr.html">vr.physics.ucla.edu</a> for more details. 
+
 ### Install Pre-Compiles Binaries for Windows
 
 Please note that ROOT VR requires a 64-bit ROOT installation. You can check whether you have a 64-bit or 32-bit installation by running `root --version` in your terminal.
