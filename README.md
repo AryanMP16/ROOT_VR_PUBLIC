@@ -1,5 +1,4 @@
-Version 0.10.1-alpha
-# ROOT VR By UCLA "VR Physics" Group
+# ROOT VR By UCLA Physics
 
 <p align = "center">
   <img style="height: auto; width: 350px;" src="./Demonstrative_Screenshots/current_state_graph.png" />
@@ -46,6 +45,10 @@ Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_10_0.tar.gz` to extract the 
 * <a href = "https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/ROOT_src/ROOT_VR_Ubuntu_0_10_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
 
 Prior to use, ensure that ROOT VR is in your `PATH` environment variable by running `export PATH="$PATH:/<path-to-ROOT-VR>/ROOT_src/build_linux"`.
+
+### Install By Compiling Source
+
+To install ROOT VR from source, clone this repository and navigate to `ROOT_src/build` (if running Windows) or `ROOT_src/build_linux` (if running Linux). From within that directory, run `cmake ..`, and afterwards `cmake --build . --config Release`. If you are running windows, you may need to manually move `VR.dll` out of `ROOT_src/build/Release` and into `ROOT_src/build` after building. Ensure that `<path-to-ROOT-VR>/ROOT_src/build` (or `<path-to-ROOT-VR>/ROOT_src/build_linux`) is in your `PATH` environment variable before using ROOT VR.
 
 ## Network/Server FAQ
 
