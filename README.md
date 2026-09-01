@@ -68,3 +68,22 @@ To use ROOT VR, load the dictionary in your ROOT session via `gSystem->Load("VR.
 In general, ROOT VR objects have two constructors: a default constructor (e.g. `VRHist2I h2;`) and one that takes a ROOT TObject (e.g. `VRGraph2D g2(existing_graph_obj);` where `existing_graph_obj` is a `TGraph2D`). In the latter use, the TObject argument must be of analogous type to the ROOT VR object, i.e. it is not possible to create `VRGraph2D g2(some_TH2_obj)`.
 
 Every ROOT VR object supports the `Draw()` function, which launches the ROOT VR server as described in the "Overview" section above.
+
+## Getting Started
+
+To get the minimal working setup, we recommend using the `CMS_Public_Data_HZZ12.root` file included in this repository to view the VRHist2F object. In the directory with this file, run the following commands: to launch ROOT,
+
+```
+root -l HZZ12.root
+```
+
+Then, within ROOT,
+```
+root [1]  gSystem->Load("VR.dll");
+root [2]  using namespace ROOT::VR;
+root [3]  TH2F* h2 = (TH2F*)_file0_Get("demo/e_RelPFIso_pT");
+root [4]  VRHist2F* h2VR = new VRHist2F(*h2);
+root [5]  h2VR->Draw();
+```
+
+Then, open the ROOT VR app on your VR headset and enter the IP address(es) output by ROOT in your terminal.
