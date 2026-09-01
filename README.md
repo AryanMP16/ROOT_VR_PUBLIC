@@ -7,6 +7,12 @@
 </p>
 <p align = "center">VRGraph2D (left) and VRHist2F (right) example plots</p>
 
+- [Overview](#overview)
+- [Installation](#installation)
+- [Network/Server FAQ](#networkserver-faq)
+- [General Usage](#general-usage)
+- [Getting Started](#getting-started)
+
 ## Overview
 The goal of ROOT VR is to extend the ROOT particle physics data analysis package by introducing:
 * Spatial immersion and perspective
