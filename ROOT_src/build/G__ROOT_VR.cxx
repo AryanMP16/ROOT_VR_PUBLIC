@@ -35,9 +35,10 @@
 #include "TDataMember.h"
 
 // Header files passed as explicit arguments
-#include "C:/ROOT_VR/ROOT_src/inc/VR.h"
-#include "C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
-#include "C:/ROOT_VR/ROOT_src/inc/VRHist.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VR.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph3D.h"
 
 // Header files passed via #pragma extra_include
 
@@ -1284,6 +1285,38 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
+   static void *new_ROOTcLcLVRcLcLVRGraph3D(void *p = nullptr);
+   static void *newArray_ROOTcLcLVRcLcLVRGraph3D(Long_t size, void *p);
+   static void delete_ROOTcLcLVRcLcLVRGraph3D(void *p);
+   static void deleteArray_ROOTcLcLVRcLcLVRGraph3D(void *p);
+   static void destruct_ROOTcLcLVRcLcLVRGraph3D(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::ROOT::VR::VRGraph3D*)
+   {
+      ::ROOT::VR::VRGraph3D *ptr = nullptr;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::ROOT::VR::VRGraph3D >(nullptr);
+      static ::ROOT::TGenericClassInfo 
+         instance("ROOT::VR::VRGraph3D", ::ROOT::VR::VRGraph3D::Class_Version(), "VRGraph3D.h", 18,
+                  typeid(::ROOT::VR::VRGraph3D), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &::ROOT::VR::VRGraph3D::Dictionary, isa_proxy, 4,
+                  sizeof(::ROOT::VR::VRGraph3D), alignof(::ROOT::VR::VRGraph3D) );
+      instance.SetNew(&new_ROOTcLcLVRcLcLVRGraph3D);
+      instance.SetNewArray(&newArray_ROOTcLcLVRcLcLVRGraph3D);
+      instance.SetDelete(&delete_ROOTcLcLVRcLcLVRGraph3D);
+      instance.SetDeleteArray(&deleteArray_ROOTcLcLVRcLcLVRGraph3D);
+      instance.SetDestructor(&destruct_ROOTcLcLVRcLcLVRGraph3D);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::ROOT::VR::VRGraph3D*)
+   {
+      return GenerateInitInstanceLocal(static_cast<::ROOT::VR::VRGraph3D*>(nullptr));
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal(static_cast<const ::ROOT::VR::VRGraph3D*>(nullptr)); R__UseDummy(_R__UNIQUE_DICT_(Init));
+} // end of namespace ROOT
+
+namespace ROOT {
    namespace VR {
 //______________________________________________________________________________
 atomic_TClass_ptr VRGraph2D::fgIsA(nullptr);  // static to hold class pointer
@@ -2253,6 +2286,45 @@ template <> TClass *VRHist2<TH2S>::Dictionary()
 template <> TClass *VRHist2<TH2S>::Class()
 {
    if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::ROOT::VR::VRHist2<TH2S>*)nullptr)->GetClass(); }
+   return fgIsA;
+}
+
+} // namespace ROOT::VR
+} // namespace ROOT::VR
+namespace ROOT {
+   namespace VR {
+//______________________________________________________________________________
+atomic_TClass_ptr VRGraph3D::fgIsA(nullptr);  // static to hold class pointer
+
+//______________________________________________________________________________
+const char *VRGraph3D::Class_Name()
+{
+   return "ROOT::VR::VRGraph3D";
+}
+
+//______________________________________________________________________________
+const char *VRGraph3D::ImplFileName()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::ROOT::VR::VRGraph3D*)nullptr)->GetImplFileName();
+}
+
+//______________________________________________________________________________
+int VRGraph3D::ImplFileLine()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::ROOT::VR::VRGraph3D*)nullptr)->GetImplFileLine();
+}
+
+//______________________________________________________________________________
+TClass *VRGraph3D::Dictionary()
+{
+   fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::ROOT::VR::VRGraph3D*)nullptr)->GetClass();
+   return fgIsA;
+}
+
+//______________________________________________________________________________
+TClass *VRGraph3D::Class()
+{
+   if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::ROOT::VR::VRGraph3D*)nullptr)->GetClass(); }
    return fgIsA;
 }
 
@@ -3296,6 +3368,43 @@ namespace ROOT {
 } // end of namespace ROOT for class ::ROOT::VR::VRHist2<TH2S>
 
 namespace ROOT {
+   namespace VR {
+//______________________________________________________________________________
+void VRGraph3D::Streamer(TBuffer &R__b)
+{
+   // Stream an object of class ROOT::VR::VRGraph3D.
+
+   if (R__b.IsReading()) {
+      R__b.ReadClassBuffer(ROOT::VR::VRGraph3D::Class(),this);
+   } else {
+      R__b.WriteClassBuffer(ROOT::VR::VRGraph3D::Class(),this);
+   }
+}
+
+} // namespace ROOT::VR
+} // namespace ROOT::VR
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_ROOTcLcLVRcLcLVRGraph3D(void *p) {
+      return  p ? new(p) ::ROOT::VR::VRGraph3D : new ::ROOT::VR::VRGraph3D;
+   }
+   static void *newArray_ROOTcLcLVRcLcLVRGraph3D(Long_t nElements, void *p) {
+      return p ? new(p) ::ROOT::VR::VRGraph3D[nElements] : new ::ROOT::VR::VRGraph3D[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_ROOTcLcLVRcLcLVRGraph3D(void *p) {
+      delete (static_cast<::ROOT::VR::VRGraph3D*>(p));
+   }
+   static void deleteArray_ROOTcLcLVRcLcLVRGraph3D(void *p) {
+      delete [] (static_cast<::ROOT::VR::VRGraph3D*>(p));
+   }
+   static void destruct_ROOTcLcLVRcLcLVRGraph3D(void *p) {
+      typedef ::ROOT::VR::VRGraph3D current_t;
+      (static_cast<current_t*>(p))->~current_t();
+   }
+} // end of namespace ROOT for class ::ROOT::VR::VRGraph3D
+
+namespace ROOT {
    // Registration Schema evolution read functions
    int RecordReadRules_libROOT_VR() {
       return 0;
@@ -3305,17 +3414,18 @@ namespace ROOT {
 namespace {
   void TriggerDictionaryInitialization_libROOT_VR_Impl() {
     static const char* headers[] = {
-"C:/ROOT_VR/ROOT_src/inc/VR.h",
-"C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h",
-"C:/ROOT_VR/ROOT_src/inc/VRHist.h",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VR.h",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph3D.h",
 nullptr
     };
     static const char* includePaths[] = {
 "C:/root_v6.40.02/include",
-"C:/ROOT_VR/ROOT_src",
-"C:/ROOT_VR/ROOT_src/inc",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc",
 "C:/root_v6.40.02/include",
-"C:/ROOT_VR/ROOT_src/build/",
+"C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/",
 nullptr
     };
     static const char* fwdDeclCode = R"DICTFWDDCLS(
@@ -3332,64 +3442,42 @@ R"DICTFWDDCLS(#pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
 )DICTFWDDCLS"
 R"DICTFWDDCLS(extern int __Cling_AutoLoading_Map;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{class  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h")))  VRGraph2D;}}
+R"DICTFWDDCLS(namespace ROOT{namespace VR{class  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h")))  VRGraph2D;}}
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2S;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2S;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist;
+R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist;
 }}
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2C;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2C;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2L;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2L;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2D;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2D;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2I;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2I;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2F;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH2.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH2F;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1S;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1S;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1C;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1C;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1L;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1L;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1D;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1D;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1I;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1I;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1F;
+R"DICTFWDDCLS(class  __attribute__((annotate("$clingAutoload$TH1.h")))  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  TH1F;
 )DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist1;
+R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist1;
 }}
 )DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist2;
+R"DICTFWDDCLS(namespace ROOT{namespace VR{template <class T> class  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h")))  VRHist2;
 }}
 )DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1F __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1F>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1I __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1I>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1D __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1D>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1L __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1L>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1C __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1C>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist1S __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist1<TH1S>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2F __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2F>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2I __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2I>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2D __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2D>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2L __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2L>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2C __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2C>;}}
-)DICTFWDDCLS"
-R"DICTFWDDCLS(namespace ROOT{namespace VR{using VRHist2S __attribute__((annotate("$clingAutoload$C:/ROOT_VR/ROOT_src/inc/VRHist.h")))  = VRHist2<TH2S>;}}
+R"DICTFWDDCLS(namespace ROOT{namespace VR{class  __attribute__((annotate("$clingAutoload$C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph3D.h")))  VRGraph3D;}}
 )DICTFWDDCLS"
 R"DICTFWDDCLS(#pragma diagnostic pop
 )DICTFWDDCLS";
@@ -3417,38 +3505,28 @@ R"DICTFWDDCLS(#pragma diagnostic pop
 
 #define _BACKWARD_BACKWARD_WARNING_H
 // Inline headers
-#include "C:/ROOT_VR/ROOT_src/inc/VR.h"
-#include "C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
-#include "C:/ROOT_VR/ROOT_src/inc/VRHist.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VR.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h"
+#include "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph3D.h"
 
 #undef  _BACKWARD_BACKWARD_WARNING_H
 )DICTPAYLOAD";
     static const char* classesHeaders[] = {
 "ROOT::VR::VRGraph2D", payloadCode, "@",
+"ROOT::VR::VRGraph3D", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1C>", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1D>", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1F>", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1I>", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1L>", payloadCode, "@",
 "ROOT::VR::VRHist1<TH1S>", payloadCode, "@",
-"ROOT::VR::VRHist1C", payloadCode, "@",
-"ROOT::VR::VRHist1D", payloadCode, "@",
-"ROOT::VR::VRHist1F", payloadCode, "@",
-"ROOT::VR::VRHist1I", payloadCode, "@",
-"ROOT::VR::VRHist1L", payloadCode, "@",
-"ROOT::VR::VRHist1S", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2C>", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2D>", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2F>", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2I>", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2L>", payloadCode, "@",
 "ROOT::VR::VRHist2<TH2S>", payloadCode, "@",
-"ROOT::VR::VRHist2C", payloadCode, "@",
-"ROOT::VR::VRHist2D", payloadCode, "@",
-"ROOT::VR::VRHist2F", payloadCode, "@",
-"ROOT::VR::VRHist2I", payloadCode, "@",
-"ROOT::VR::VRHist2L", payloadCode, "@",
-"ROOT::VR::VRHist2S", payloadCode, "@",
 "ROOT::VR::VRHist<TH1C>", payloadCode, "@",
 "ROOT::VR::VRHist<TH1D>", payloadCode, "@",
 "ROOT::VR::VRHist<TH1F>", payloadCode, "@",

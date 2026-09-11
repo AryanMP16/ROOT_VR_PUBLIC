@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/VR.dir/src/VR.cxx.o.d"
   "CMakeFiles/VR.dir/src/VRGraph2D.cxx.o"
   "CMakeFiles/VR.dir/src/VRGraph2D.cxx.o.d"
+  "CMakeFiles/VR.dir/src/VRGraph3D.cxx.o"
+  "CMakeFiles/VR.dir/src/VRGraph3D.cxx.o.d"
   "CMakeFiles/VR.dir/src/VRHist.cxx.o"
   "CMakeFiles/VR.dir/src/VRHist.cxx.o.d"
   "G__ROOT_VR.cxx"

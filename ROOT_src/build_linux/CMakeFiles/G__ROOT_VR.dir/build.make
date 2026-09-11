@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src
+CMAKE_SOURCE_DIR = /mnt/c/ROOT_VR/ROOT_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux
+CMAKE_BINARY_DIR = /mnt/c/ROOT_VR/ROOT_src/build_linux
 
 # Utility rule file for G__ROOT_VR.
 
@@ -70,16 +70,18 @@ CMakeFiles/G__ROOT_VR: G__ROOT_VR.cxx
 CMakeFiles/G__ROOT_VR: libROOT_VR_rdict.pcm
 CMakeFiles/G__ROOT_VR: libROOT_VR.rootmap
 
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/LinkDef.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VR.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VR.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h
-G__ROOT_VR.cxx: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/LinkDef.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__ROOT_VR.cxx, libROOT_VR_rdict.pcm, libROOT_VR.rootmap"
-	/usr/bin/cmake -E env LD_LIBRARY_PATH=:/mnt/c/Users/uclav/Desktop/ROOT_Linux/root/lib /mnt/c/Users/uclav/Desktop/ROOT_Linux/root/bin/rootcling -v2 -f G__ROOT_VR.cxx -s /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/libROOT_VR.so -rml libROOT_VR.so -rmf /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/libROOT_VR.rootmap -compilerI/usr/include/c++/13 -compilerI/usr/include/x86_64-linux-gnu/c++/13 -compilerI/usr/include/c++/13/backward -compilerI/usr/lib/gcc/x86_64-linux-gnu/13/include -compilerI/usr/local/include -compilerI/usr/include/x86_64-linux-gnu -compilerI/usr/include -I/mnt/c/Users/uclav/Desktop/ROOT_Linux/root/include -I/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src -I/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VR.h /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/LinkDef.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/LinkDef.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VR.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph2D.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRHist.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph3D.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VR.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph2D.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRHist.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph3D.h
+G__ROOT_VR.cxx: /mnt/c/ROOT_VR/ROOT_src/inc/LinkDef.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__ROOT_VR.cxx, libROOT_VR_rdict.pcm, libROOT_VR.rootmap"
+	/usr/bin/cmake -E env LD_LIBRARY_PATH=: /home/aryan123/anaconda3/bin/rootcling -v2 -f G__ROOT_VR.cxx -s /mnt/c/ROOT_VR/ROOT_src/build_linux/libROOT_VR.so -rml libROOT_VR.so -rmf /mnt/c/ROOT_VR/ROOT_src/build_linux/libROOT_VR.rootmap -compilerI/home/aryan123/anaconda3/include -compilerI/home/aryan123/anaconda3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ -compilerI/home/aryan123/anaconda3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu -compilerI/home/aryan123/anaconda3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward -compilerI/home/aryan123/anaconda3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include -compilerI/home/aryan123/anaconda3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed -compilerI/home/aryan123/anaconda3/x86_64-conda-linux-gnu/sysroot/usr/include -I/home/aryan123/anaconda3/include -I/mnt/c/ROOT_VR/ROOT_src -I/mnt/c/ROOT_VR/ROOT_src/inc /mnt/c/ROOT_VR/ROOT_src/inc/VR.h /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph2D.h /mnt/c/ROOT_VR/ROOT_src/inc/VRHist.h /mnt/c/ROOT_VR/ROOT_src/inc/VRGraph3D.h /mnt/c/ROOT_VR/ROOT_src/inc/LinkDef.h
 
 libROOT_VR_rdict.pcm: G__ROOT_VR.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate libROOT_VR_rdict.pcm
@@ -103,6 +105,6 @@ CMakeFiles/G__ROOT_VR.dir/clean:
 .PHONY : CMakeFiles/G__ROOT_VR.dir/clean
 
 CMakeFiles/G__ROOT_VR.dir/depend:
-	cd /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/G__ROOT_VR.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/ROOT_VR/ROOT_src/build_linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/ROOT_VR/ROOT_src /mnt/c/ROOT_VR/ROOT_src /mnt/c/ROOT_VR/ROOT_src/build_linux /mnt/c/ROOT_VR/ROOT_src/build_linux /mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles/G__ROOT_VR.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/G__ROOT_VR.dir/depend
 

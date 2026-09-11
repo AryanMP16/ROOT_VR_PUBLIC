@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src
+# Install script for directory: /mnt/c/ROOT_VR/ROOT_src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/home/aryan123/anaconda3/bin/x86_64-conda-linux-gnu-objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -49,15 +49,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/libVR.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/c/ROOT_VR/ROOT_src/build_linux/libVR.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so"
-         OLD_RPATH "/mnt/c/Users/uclav/Desktop/ROOT_Linux/root/lib:"
-         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so")
+      execute_process(COMMAND "/home/aryan123/anaconda3/bin/x86_64-conda-linux-gnu-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libVR.so")
     endif()
   endif()
 endif()
@@ -67,9 +63,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VR.h"
-    "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
-    "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h"
+    "/mnt/c/ROOT_VR/ROOT_src/inc/VR.h"
+    "/mnt/c/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
+    "/mnt/c/ROOT_VR/ROOT_src/inc/VRHist.h"
+    "/mnt/c/ROOT_VR/ROOT_src/inc/VRGraph3D.h"
     )
 endif()
 
@@ -77,7 +74,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/cmake/ROOT_VR/ROOT_VRTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}/usr/local/lib/cmake/ROOT_VR/ROOT_VRTargets.cmake"
-         "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets.cmake")
+         "/mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/usr/local/lib/cmake/ROOT_VR/ROOT_VRTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -98,7 +95,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/cmake/ROOT_VR" TYPE FILE FILES "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets.cmake")
+  file(INSTALL DESTINATION "/usr/local/lib/cmake/ROOT_VR" TYPE FILE FILES "/mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "/usr/local/lib/cmake/ROOT_VR/ROOT_VRTargets-noconfig.cmake")
@@ -108,7 +105,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "/usr/local/lib/cmake/ROOT_VR" TYPE FILE FILES "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "/usr/local/lib/cmake/ROOT_VR" TYPE FILE FILES "/mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles/Export/c8fadf05f63fe9ef3921602d5a8f7cea/ROOT_VRTargets-noconfig.cmake")
   endif()
 endif()
 
@@ -120,5 +117,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/ROOT_VR/ROOT_src/build_linux/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

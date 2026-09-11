@@ -1,4 +1,4 @@
-# Install script for directory: C:/ROOT_VR/ROOT_src
+# Install script for directory: C:/Users/aryan/Desktop/ROOT_VR/ROOT_src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,21 +34,22 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/ROOT_VR/ROOT_src/build/Debug/VR.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/Debug/VR.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/ROOT_VR/ROOT_src/build/Release/VR.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/Release/VR.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/ROOT_VR/ROOT_src/build/MinSizeRel/VR.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/MinSizeRel/VR.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/ROOT_VR/ROOT_src/build/RelWithDebInfo/VR.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/RelWithDebInfo/VR.lib")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "C:/ROOT_VR/ROOT_src/inc/VR.h"
-    "C:/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
-    "C:/ROOT_VR/ROOT_src/inc/VRHist.h"
+    "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VR.h"
+    "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph2D.h"
+    "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRHist.h"
+    "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/inc/VRGraph3D.h"
     )
 endif()
 
@@ -56,7 +57,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR/ROOT_VRTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR/ROOT_VRTargets.cmake"
-         "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets.cmake")
+         "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR/ROOT_VRTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -77,7 +78,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets.cmake")
+  file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR/ROOT_VRTargets-debug.cmake")
@@ -87,7 +88,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-debug.cmake")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-debug.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
@@ -98,7 +99,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-minsizerel.cmake")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-minsizerel.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
@@ -109,7 +110,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-relwithdebinfo.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
@@ -120,16 +121,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-release.cmake")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/ROOT_VR/lib/cmake/ROOT_VR" TYPE FILE FILES "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/CMakeFiles/Export/1207c2ec5b8f9aebaf5647d8a976f6a1/ROOT_VRTargets-release.cmake")
   endif()
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/ROOT_VR/ROOT_src/build/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()
 if(CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
     set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
@@ -143,6 +138,8 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/ROOT_VR/ROOT_src/build/${CMAKE_INSTALL_MANIFEST}"
+  string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+  file(WRITE "C:/Users/aryan/Desktop/ROOT_VR/ROOT_src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

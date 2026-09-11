@@ -13,6 +13,7 @@ ROOT_GENERATE_DICTIONARY(G__ROOT_VR
     ${CMAKE_CURRENT_LIST_DIR}/inc/VR.h #CMAKE_CURRENT_LIST_DIR is full directory of the current CMakeList
     ${CMAKE_CURRENT_LIST_DIR}/inc/VRGraph2D.h
     ${CMAKE_CURRENT_LIST_DIR}/inc/VRHist.h
+    ${CMAKE_CURRENT_LIST_DIR}/inc/VRGraph3D.h
     LINKDEF ${CMAKE_CURRENT_LIST_DIR}/inc/LinkDef.h
 )
 
@@ -20,6 +21,7 @@ add_library(VR SHARED #"SHARED" means "dynamic library that may be linked by oth
     G__ROOT_VR.cxx
     ${CMAKE_CURRENT_LIST_DIR}/src/VR.cxx
     ${CMAKE_CURRENT_LIST_DIR}/src/VRGraph2D.cxx
+    ${CMAKE_CURRENT_LIST_DIR}/src/VRGraph3D.cxx
     ${CMAKE_CURRENT_LIST_DIR}/src/VRHist.cxx
 )
 
@@ -31,7 +33,7 @@ target_include_directories(VR PUBLIC
   $<INSTALL_INTERFACE:include>)
 
 set_target_properties(VR PROPERTIES
-    PUBLIC_HEADER "inc/VR.h;inc/VRGraph2D.h;inc/VRHist.h")
+    PUBLIC_HEADER "inc/VR.h;inc/VRGraph2D.h;inc/VRHist.h;inc/VRGraph3D.h")
 
 install(TARGETS VR
       EXPORT ROOT_VR-targets
@@ -50,5 +52,5 @@ install(EXPORT ROOT_VR-targets
   DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/ROOT_VR
 )
 
-#cmake -DROOT_DIR=C:/ROOT_files/installdir/cmake ..
+#cmake ..
 #cmake --build . --config Release

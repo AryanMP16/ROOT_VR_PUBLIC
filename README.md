@@ -1,3 +1,5 @@
+Version 0.12.0-alpha <br>
+ROOT VR has been tested with <a href="https://root.cern/releases/release-64002/">ROOT 6.40.02</a> and above.
 # ROOT VR By UCLA Physics
 
 <p align = "center">
@@ -12,6 +14,7 @@
 - [Network/Server FAQ](#networkserver-faq)
 - [General Usage](#general-usage)
 - [Getting Started](#getting-started)
+- <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.MD">Documentation</a>
 
 ## Overview
 The goal of ROOT VR is to extend the ROOT particle physics data analysis package by introducing:
@@ -30,7 +33,7 @@ ROOT VR is currently supported on Windows (64-bit) and Linux (Ubuntu).
 
 ## Installation
 
-This repository includes the necessary ROOT dictionary implementing ROOT VR objects, but not the VR visualization software itself; that can be found on the Meta AppLab. Please see <a href="https://vr.physics.ucla.edu/rootvr.html">vr.physics.ucla.edu</a> for more details. 
+This repository includes the necessary ROOT dictionary implementing ROOT VR objects, but not the VR visualization software itself; that can be found on the Meta AppLab. Please see <a href="https://vr.physics.ucla.edu/rootvr.html">vr.physics.ucla.edu/rootvr</a> for more details. 
 
 ### Install Pre-Compiles Binaries for Windows
 
@@ -38,19 +41,19 @@ Please note that ROOT VR requires a 64-bit ROOT installation. You can check whet
 
 The recommended installation method is to download and run the ROOT VR installer (linked below). Doing so will download the ROOT VR client and associated ROOT dictionary, and append the latter to your `Path` environment variable. Upon uninstallation, this will be removed from `Path`. An uninstaller will be downloaded with the linked installer. If the above link is not functioning, you may want to clone this repository and manually run the file `ROOT_VR_installer.exe`.
 
-* <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_installer.exe"> ROOT VR 0.10.0 Windows Win64 Installer</a>
+* <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_installer.exe"> ROOT VR 0.12.0 Windows Win64 Installer</a>
 
 ### Install Pre-Compiled Binaries for Linux
 
 The recommended installation method is to run the following command from within the directory in which you would like to install ROOT VR:
 
 ```
-wget https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/ROOT_src/ROOT_VR_Ubuntu_0_10_0.tar.gz
+wget https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/ROOT_src/ROOT_VR_Ubuntu_0_12_0.tar.gz
 ```
 
-Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_10_0.tar.gz` to extract the `.tar.gz` file. If you are unable to use `wget`, you may download the `.tar.gz` file from the following link. 
+Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_12_0.tar.gz` to extract the `.tar.gz` file. If you are unable to use `wget`, you may download the `.tar.gz` file from the following link. 
 
-* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_Ubuntu_0_10_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
+* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_Ubuntu_0_12_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
 
 Prior to use, ensure that ROOT VR is in your `PATH` environment variable by running `export PATH="$PATH:/<path-to-ROOT-VR>/ROOT_src/build_linux"`.
 
@@ -70,10 +73,22 @@ To use ROOT VR, load the dictionary in your ROOT session via `gSystem->Load("VR.
 
 * VRGraph2D
 * VRHist2F/I/D/L/C/S
+* VRGraph3D (no analogue)
 
 In general, ROOT VR objects have two constructors: a default constructor (e.g. `VRHist2I h2;`) and one that takes a ROOT TObject (e.g. `VRGraph2D g2(existing_graph_obj);` where `existing_graph_obj` is a `TGraph2D`). In the latter use, the TObject argument must be of analogous type to the ROOT VR object, i.e. it is not possible to create `VRGraph2D g2(some_TH2_obj)`.
 
 Every ROOT VR object supports the `Draw()` function, which launches the ROOT VR server as described in the "Overview" section above.
+
+VRGraph3D has no ROOT analogue, as it is a completely new function that plots 4-dimensional data (i.e. functions of 3 variables) and thus only makes sense in VR. It has two constructors (aside from its copy constructor and assignment operator):
+```
+VRGraph3D();
+```
+And
+```
+VRGraph3D(Int_t n, Double_t* x, Double_t* y, Double_t* z, Double_t* w);
+```
+
+More information on this new object can be found in the <a href="https://github.com/AryanMP16/ROOT_VR/blob/3DGraph/DOCS.MD">documentation page</a>.
 
 ## Getting Started
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src
+CMAKE_SOURCE_DIR = /mnt/c/ROOT_VR/ROOT_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux
+CMAKE_BINARY_DIR = /mnt/c/ROOT_VR/ROOT_src/build_linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles /mnt/c/ROOT_VR/ROOT_src/build_linux//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/uclav/Desktop/ROOT_VR/ROOT_src/build_linux/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/ROOT_VR/ROOT_src/build_linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -259,6 +259,30 @@ src/VRGraph2D.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VR.dir/build.make CMakeFiles/VR.dir/src/VRGraph2D.cxx.s
 .PHONY : src/VRGraph2D.cxx.s
 
+src/VRGraph3D.o: src/VRGraph3D.cxx.o
+.PHONY : src/VRGraph3D.o
+
+# target to build an object file
+src/VRGraph3D.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VR.dir/build.make CMakeFiles/VR.dir/src/VRGraph3D.cxx.o
+.PHONY : src/VRGraph3D.cxx.o
+
+src/VRGraph3D.i: src/VRGraph3D.cxx.i
+.PHONY : src/VRGraph3D.i
+
+# target to preprocess a source file
+src/VRGraph3D.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VR.dir/build.make CMakeFiles/VR.dir/src/VRGraph3D.cxx.i
+.PHONY : src/VRGraph3D.cxx.i
+
+src/VRGraph3D.s: src/VRGraph3D.cxx.s
+.PHONY : src/VRGraph3D.s
+
+# target to generate assembly for a file
+src/VRGraph3D.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VR.dir/build.make CMakeFiles/VR.dir/src/VRGraph3D.cxx.s
+.PHONY : src/VRGraph3D.cxx.s
+
 src/VRHist.o: src/VRHist.cxx.o
 .PHONY : src/VRHist.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... src/VRGraph2D.o"
 	@echo "... src/VRGraph2D.i"
 	@echo "... src/VRGraph2D.s"
+	@echo "... src/VRGraph3D.o"
+	@echo "... src/VRGraph3D.i"
+	@echo "... src/VRGraph3D.s"
 	@echo "... src/VRHist.o"
 	@echo "... src/VRHist.i"
 	@echo "... src/VRHist.s"

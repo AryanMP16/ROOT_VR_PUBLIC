@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\ROOT_VR\ROOT_src\build\CMakeFiles\b0bba648391f13169bdb24485bcd619f\G__ROOT_VR.cxx.rule">
+    <CustomBuild Include="C:\Users\aryan\Desktop\ROOT_VR\ROOT_src\build\CMakeFiles\375d2626ee8f6238b0079ea598fff09c\G__ROOT_VR.cxx.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\ROOT_VR\ROOT_src\build\CMakeFiles\4ae87943a00ec9a8cb4b5c35d58aace8\G__ROOT_VR.rule">
+    <CustomBuild Include="C:\Users\aryan\Desktop\ROOT_VR\ROOT_src\build\CMakeFiles\e5f5d537808698697c3b6d0e7ac43dd0\G__ROOT_VR.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\ROOT_VR\ROOT_src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aryan\Desktop\ROOT_VR\ROOT_src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\ROOT_VR\ROOT_src\build\CMakeFiles\G__ROOT_VR" />
+    <None Include="C:\Users\aryan\Desktop\ROOT_VR\ROOT_src\build\CMakeFiles\G__ROOT_VR" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3C6D5978-AFF5-3020-812F-B5D98AE14F52}</UniqueIdentifier>
+      <UniqueIdentifier>{B6D437C6-8FD1-3687-A27F-0709B6784678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
