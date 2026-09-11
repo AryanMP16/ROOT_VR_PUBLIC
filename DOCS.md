@@ -96,6 +96,9 @@ void v3macro() {
 | `TAxis*` | `GetZaxis()` <br> Returns z-axis as a TAxis object; useful for renaming axes. |
 | `Double_t` | `GetMax() const` <br> Returns largest w value. |
 | `Double_t` | `GetMin() const` <br> Returns smallest w value. |
+| `void` | `print_all()` <br> For debugging purposes. Uses `std::cout` to print all member attributes except for the `TAxis` objects; to show that the `TAxis` are working properly `print_all()` simply prints each axis' max and min. |
+| `void` | `generate_data_bytes(VRGraph3D& this_VRGraph3D, std::string& data)` <br> Assembles the raw VRGraph3D data to be hosted on the ROOT VR server (see `Draw(...)` below). Stores the data in the `std::string& data` argument. | 
+| `virtual void` | `Draw(Option_t* option = "") override` <br> Starts a server on the user's machine using httplib, and hosts the data assembled by the `get_data_bytes(...)` method. The data can be manually obtained by running `curl` on `http://localhost:7668/get_data` (note: 7668 spells R-O-O-T in T9 text). The server can be manually stopped by running `curl` on `http://localhost:7668/stop`. |
 
 ### Protected Attributes
 
