@@ -88,7 +88,7 @@ And
 VRGraph3D(Int_t n, Double_t* x, Double_t* y, Double_t* z, Double_t* w);
 ```
 
-More information on this new object can be found in the <a href="https://github.com/AryanMP16/ROOT_VR/blob/3DGraph/DOCS.MD">documentation page</a>.
+More information on this new object can be found in the <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.md">documentation page</a>.
 
 ## Getting Started
 
