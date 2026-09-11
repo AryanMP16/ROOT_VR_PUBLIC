@@ -95,7 +95,7 @@ More information on this new object can be found in the <a href="https://github.
 To get the minimal working setup, we recommend using the `CMS_Public_Data_HZZ12.root` file included in this repository to view the VRHist2F object. In the directory with this file, run the following commands: to launch ROOT,
 
 ```
-root -l HZZ12.root
+root -l CMS_Public_Data_HZZ12.root
 ```
 
 Then, within ROOT,
