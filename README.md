@@ -14,7 +14,7 @@ ROOT VR has been tested with <a href="https://root.cern/releases/release-64002/"
 - [Network/Server FAQ](#networkserver-faq)
 - [General Usage](#general-usage)
 - [Getting Started](#getting-started)
-- <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.MD">Documentation</a>
+- <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.md">Documentation</a>
 
 ## Overview
 The goal of ROOT VR is to extend the ROOT particle physics data analysis package by introducing:
