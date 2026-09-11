@@ -14,7 +14,7 @@ ROOT VR has been tested with <a href="https://root.cern/releases/release-64002/"
 - [Network/Server FAQ](#networkserver-faq)
 - [General Usage](#general-usage)
 - [Getting Started](#getting-started)
-- <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.md">Documentation</a>
+- <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/main/DOCS.md">Documentation</a>
 
 ## Overview
 The goal of ROOT VR is to extend the ROOT particle physics data analysis package by introducing:
@@ -41,7 +41,7 @@ Please note that ROOT VR requires a 64-bit ROOT installation. You can check whet
 
 The recommended installation method is to download and run the ROOT VR installer (linked below). Doing so will download the ROOT VR client and associated ROOT dictionary, and append the latter to your `Path` environment variable. Upon uninstallation, this will be removed from `Path`. An uninstaller will be downloaded with the linked installer. If the above link is not functioning, you may want to clone this repository and manually run the file `ROOT_VR_installer.exe`.
 
-* <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_installer.exe"> ROOT VR 0.12.0 Windows Win64 Installer</a>
+* <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/main/ROOT_VR_installer.exe"> ROOT VR 0.12.0 Windows Win64 Installer</a>
 
 ### Install Pre-Compiled Binaries for Linux
 
@@ -53,7 +53,7 @@ wget https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/R
 
 Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_12_0.tar.gz` to extract the `.tar.gz` file. If you are unable to use `wget`, you may download the `.tar.gz` file from the following link. 
 
-* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/master/ROOT_VR_Ubuntu_0_12_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
+* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/main/ROOT_VR_Ubuntu_0_12_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
 
 Prior to use, ensure that ROOT VR is in your `PATH` environment variable by running `export PATH="$PATH:/<path-to-ROOT-VR>/ROOT_src/build_linux"`.
 
@@ -88,7 +88,7 @@ And
 VRGraph3D(Int_t n, Double_t* x, Double_t* y, Double_t* z, Double_t* w);
 ```
 
-More information on this new object can be found in the <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/master/DOCS.md">documentation page</a>.
+More information on this new object can be found in the <a href="https://github.com/AryanMP16/ROOT_VR_PUBLIC/blob/main/DOCS.md">documentation page</a>.
 
 ## Getting Started
 
