@@ -53,7 +53,7 @@ wget https://github.com/AryanMP16/ROOT_VR/raw/refs/heads/server-implementation/R
 
 Afterwards, you may run `tar -xvzf ROOT_VR_Ubuntu_0_12_0.tar.gz` to extract the `.tar.gz` file. If you are unable to use `wget`, you may download the `.tar.gz` file from the following link. 
 
-* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/main/ROOT_VR_Ubuntu_0_12_0.tar.gz"> ROOT VR 0.10.0 Ubuntu </a>
+* <a href = "https://github.com/AryanMP16/ROOT_VR_PUBLIC/raw/refs/heads/main/ROOT_VR_Ubuntu_0_12_0.tar.gz"> ROOT VR 0.12.0 Ubuntu </a>
 
 Prior to use, ensure that ROOT VR is in your `PATH` environment variable by running `export PATH="$PATH:/<path-to-ROOT-VR>/ROOT_src/build_linux"`.
 
